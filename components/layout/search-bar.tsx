@@ -17,11 +17,13 @@ export default function SearchBar() {
   };
 
   return (
-    <form onSubmit={handleSearch} className="relative w-full max-w-sm">
-      <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+    <form
+      onSubmit={handleSearch}
+      className="max-w-md w-full items-center hidden md:flex"
+    >
       <Input
         placeholder="Search products..."
-        className="pl-8"
+        className=""
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
