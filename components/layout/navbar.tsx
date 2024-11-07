@@ -28,7 +28,7 @@ export default function Navbar() {
                     {session ? (
                         <UserNav user={session.user} />
                     ) : (
-                        <Button asChild variant="ghost">
+                        <Button asChild variant="default" className="ml-2">
                             <Link href="/auth/signin">
                                 <User className="mr-2 h-4 w-4" />
                                 Sign In
