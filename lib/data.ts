@@ -1,91 +1,443 @@
 export const products = [
   {
     id: "1",
-    name: "Premium Wireless Headphones",
-    description: "High-quality wireless headphones with noise cancellation",
-    price: 199.99,
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
+    name: "Ultra HD 4K Smart TV",
+    description: "55-inch 4K Ultra HD Smart LED TV with HDR and Alexa compatibility",
+    price: 599.99,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=800&q=80",
     category: "electronics",
-    inventory: 50,
-    rating: 4.5,
-    reviews: 128
+    inventory: 30,
+    rating: 4.6,
+    reviews: 235
   },
   {
     id: "2",
-    name: "Smart Watch Series X",
-    description: "Advanced smartwatch with health tracking features",
-    price: 299.99,
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+    name: "Wireless Noise-Cancelling Headphones",
+    description: "Premium over-ear headphones with active noise cancellation",
+    price: 249.99,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
     category: "electronics",
-    inventory: 30,
-    rating: 4.7,
-    reviews: 89
+    inventory: 50,
+    rating: 4.8,
+    reviews: 189
   },
   {
     id: "3",
-    name: "Vintage Leather Backpack",
-    description: "Handcrafted genuine leather backpack",
-    price: 89.99,
-    image: "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?w=800&q=80",
+    name: "Designer Leather Tote Bag",
+    description: "Handcrafted genuine leather tote with multiple compartments",
+    price: 179.99,
+    image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80",
     category: "fashion",
     inventory: 25,
-    rating: 4.8,
-    reviews: 56
-  },
-  {
-    id: "4",
-    name: "Smart Home Speaker",
-    description: "Voice-controlled smart speaker with premium sound",
-    price: 129.99,
-    image: "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=800&q=80",
-    category: "electronics",
-    inventory: 40,
-    rating: 4.4,
+    rating: 4.7,
     reviews: 92
   },
   {
-    id: "5",
-    name: "Minimalist Desk Lamp",
-    description: "Modern LED desk lamp with adjustable brightness",
-    price: 49.99,
-    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
-    category: "home-living",
-    inventory: 60,
-    rating: 4.6,
-    reviews: 45
+    id: "4",
+    name: "Smart Home Security Camera",
+    description: "Wi-Fi enabled security camera with night vision and two-way audio",
+    price: 89.99,
+    image: "https://images.unsplash.com/photo-1558000143-a78f8299c40b?w=800&q=80",
+    category: "electronics",
+    inventory: 40,
+    rating: 4.5,
+    reviews: 156
   },
   {
-    id: "6",
-    name: "Organic Cotton T-Shirt",
-    description: "Sustainable and comfortable cotton t-shirt",
-    price: 29.99,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80",
-    category: "fashion",
-    inventory: 100,
-    rating: 4.3,
+    id: "5",
+    name: "Ergonomic Office Chair",
+    description: "Adjustable office chair with lumbar support and breathable mesh back",
+    price: 199.99,
+    image: "https://images.unsplash.com/photo-1592781959439-8fe0cbb301cc?w=800&q=80",
+    category: "home-living",
+    inventory: 20,
+    rating: 4.4,
     reviews: 78
   },
   {
+    id: "6",
+    name: "Organic Green Tea Set",
+    description: "Premium organic green tea assortment with ceramic teapot",
+    price: 49.99,
+    image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800&q=80",
+    category: "food-beverage",
+    inventory: 100,
+    rating: 4.9,
+    reviews: 67
+  },
+  {
     id: "7",
-    name: "Professional Camera Kit",
-    description: "Complete DSLR camera kit for professionals",
+    name: "Professional DSLR Camera",
+    description: "24.2 MP DSLR camera with 4K video capability and Wi-Fi",
     price: 1299.99,
     image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80",
     category: "electronics",
     inventory: 15,
-    rating: 4.9,
-    reviews: 34
+    rating: 4.8,
+    reviews: 203
   },
   {
     id: "8",
-    name: "Fitness Tracker Band",
-    description: "Advanced fitness tracking with heart rate monitoring",
-    price: 79.99,
-    image: "https://images.unsplash.com/photo-1557935728-e6d1eaabe558?w=800&q=80",
+    name: "Yoga Mat and Accessories Set",
+    description: "Non-slip yoga mat with blocks, strap, and carrying bag",
+    price: 59.99,
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
     category: "sports",
+    inventory: 60,
+    rating: 4.6,
+    reviews: 129
+  },
+  {
+    id: "9",
+    name: "Bestselling Novel Collection",
+    description: "Set of 5 bestselling contemporary fiction novels",
+    price: 69.99,
+    image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80",
+    category: "books",
+    inventory: 40,
+    rating: 4.7,
+    reviews: 85
+  },
+  {
+    id: "10",
+    name: "Luxury Skincare Gift Set",
+    description: "Premium skincare set with cleanser, toner, serum, and moisturizer",
+    price: 129.99,
+    image: "https://images.unsplash.com/photo-1570194065650-d99fb4b38b17?w=800&q=80",
+    category: "beauty",
+    inventory: 30,
+    rating: 4.8,
+    reviews: 112
+  },
+  {
+    id: "11",
+    name: "Smart Fitness Watch",
+    description: "Advanced fitness tracker with heart rate monitor and GPS",
+    price: 149.99,
+    image: "https://images.unsplash.com/photo-1557438159-51eec7a6c9e8?w=800&q=80",
+    category: "electronics",
     inventory: 45,
     rating: 4.5,
+    reviews: 276
+  },
+  {
+    id: "12",
+    name: "Artisanal Coffee Sampler",
+    description: "Set of 4 gourmet single-origin coffee beans",
+    price: 39.99,
+    image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&q=80",
+    category: "food-beverage",
+    inventory: 50,
+    rating: 4.9,
+    reviews: 98
+  },
+  {
+    id: "13",
+    name: "Wireless Charging Pad",
+    description: "Fast-charging wireless pad compatible with all Qi-enabled devices",
+    price: 29.99,
+    image: "https://images.unsplash.com/photo-1585338686423-a2baa103eeab?w=800&q=80",
+    category: "electronics",
+    inventory: 75,
+    rating: 4.4,
+    reviews: 189
+  },
+  {
+    id: "14",
+    name: "Portable Bluetooth Speaker",
+    description: "Waterproof Bluetooth speaker with 20-hour battery life",
+    price: 79.99,
+    image: "https://images.unsplash.com/photo-1589003077984-894e133dabab?w=800&q=80",
+    category: "electronics",
+    inventory: 35,
+    rating: 4.6,
+    reviews: 154
+  },
+  {
+    id: "15",
+    name: "Organic Bamboo Bed Sheets",
+    description: "Soft and eco-friendly bamboo sheet set, Queen size",
+    price: 89.99,
+    image: "https://images.unsplash.com/photo-1629949009765-40fc74c9ec7d?w=800&q=80",
+    category: "home-living",
+    inventory: 25,
+    rating: 4.7,
+    reviews: 76
+  },
+  {
+    id: "16",
+    name: "Professional Chef's Knife Set",
+    description: "8-piece stainless steel knife set with wooden block",
+    price: 199.99,
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800&q=80",
+    category: "home-living",
+    inventory: 20,
+    rating: 4.8,
+    reviews: 62
+  },
+  {
+    id: "17",
+    name: "Electric Scooter",
+    description: "Foldable electric scooter with 15-mile range and LED display",
+    price: 399.99,
+    image: "https://images.unsplash.com/photo-1605559911160-a3d95d213904?w=800&q=80",
+    category: "sports",
+    inventory: 15,
+    rating: 4.5,
+    reviews: 87
+  },
+  {
+    id: "18",
+    name: "Smart Door Lock",
+    description: "Keyless entry door lock with fingerprint and app control",
+    price: 159.99,
+    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+    category: "home-living",
+    inventory: 30,
+    rating: 4.6,
+    reviews: 113
+  },
+  {
+    id: "19",
+    name: "Vintage Vinyl Record Player",
+    description: "3-speed turntable with built-in speakers and Bluetooth",
+    price: 129.99,
+    image: "https://images.unsplash.com/photo-1602848597941-0d3f3d1e38f7?w=800&q=80",
+    category: "electronics",
+    inventory: 25,
+    rating: 4.4,
+    reviews: 95
+  },
+  {
+    id: "20",
+    name: "Adjustable Dumbbell Set",
+    description: "Space-saving adjustable dumbbell pair, 5-52.5 lbs each",
+    price: 299.99,
+    image: "https://images.unsplash.com/photo-1586401100295-7f8cd2f630fb?w=800&q=80",
+    category: "sports",
+    inventory: 20,
+    rating: 4.7,
+    reviews: 138
+  },
+  {
+    id: "21",
+    name: "Smart Garden Indoor Herb Kit",
+    description: "Self-watering indoor garden with LED grow lights for fresh herbs",
+    price: 99.99,
+    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80",
+    category: "home-living",
+    inventory: 40,
+    rating: 4.5,
     reviews: 112
+  },
+  {
+    id: "22",
+    name: "Wireless Gaming Mouse",
+    description: "High-precision wireless gaming mouse with customizable RGB lighting",
+    price: 69.99,
+    image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=800&q=80",
+    category: "electronics",
+    inventory: 55,
+    rating: 4.7,
+    reviews: 231
+  },
+  {
+    id: "23",
+    name: "Aromatherapy Essential Oil Diffuser",
+    description: "Ultrasonic cool mist diffuser with 7 LED light colors",
+    price: 39.99,
+    image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
+    category: "health-wellness",
+    inventory: 70,
+    rating: 4.6,
+    reviews: 185
+  },
+  {
+    id: "24",
+    name: "Portable Solar Power Bank",
+    description: "20000mAh solar-powered charger with dual USB ports",
+    price: 49.99,
+    image: "https://images.unsplash.com/photo-1620827240435-04f58a6e1410?w=800&q=80",
+    category: "electronics",
+    inventory: 60,
+    rating: 4.4,
+    reviews: 97
+  },
+  {
+    id: "25",
+    name: "Gourmet Chocolate Truffle Assortment",
+    description: "24-piece luxury chocolate truffle set with assorted flavors",
+    price: 34.99,
+    image: "https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=800&q=80",
+    category: "food-beverage",
+    inventory: 80,
+    rating: 4.9,
+    reviews: 156
+  },
+  {
+    id: "26",
+    name: "Smart Wi-Fi Air Purifier",
+    description: "HEPA air purifier with app control and air quality monitor",
+    price: 179.99,
+    image: "https://images.unsplash.com/photo-1585909695284-32d2985ac9c0?w=800&q=80",
+    category: "home-living",
+    inventory: 25,
+    rating: 4.7,
+    reviews: 89
+  },
+  {
+    id: "27",
+    name: "Wooden Chess Set",
+    description: "Handcrafted wooden chess set with felt-lined storage",
+    price: 79.99,
+    image: "https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=800&q=80",
+    category: "toys-games",
+    inventory: 30,
+    rating: 4.8,
+    reviews: 72
+  },
+  {
+    id: "28",
+    name: "Reusable Silicone Food Storage Bags",
+    description: "Set of 6 eco-friendly, dishwasher-safe silicone food bags",
+    price: 24.99,
+    image: "https://images.unsplash.com/photo-1622198050686-6690c2c97c10?w=800&q=80",
+    category: "home-living",
+    inventory: 100,
+    rating: 4.5,
+    reviews: 213
+  },
+  {
+    id: "29",
+    name: "Digital Drawing Tablet",
+    description: "10-inch graphic tablet with 8192 pressure levels and stylus",
+    price: 149.99,
+    image: "https://images.unsplash.com/photo-1589401806207-2aec2cfb107e?w=800&q=80",
+    category: "electronics",
+    inventory: 35,
+    rating: 4.6,
+    reviews: 167
+  },
+  {
+    id: "30",
+    name: "Compact Espresso Machine",
+    description: "15-bar pump espresso maker with milk frother",
+    price: 199.99,
+    image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=800&q=80",
+    category: "home-living",
+    inventory: 20,
+    rating: 4.5,
+    reviews: 104
+  },
+  {
+    id: "31",
+    name: "Outdoor Camping Hammock",
+    description: "Lightweight, portable double hammock with mosquito net",
+    price: 59.99,
+    image: "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?w=800&q=80",
+    category: "sports",
+    inventory: 50,
+    rating: 4.7,
+    reviews: 86
+  },
+  {
+    id: "32",
+    name: "Smart Body Composition Scale",
+    description: "Wi-Fi enabled scale measuring weight, BMI, and body fat percentage",
+    price: 89.99,
+    image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80",
+    category: "health-wellness",
+    inventory: 40,
+    rating: 4.4,
+    reviews: 152
+  },
+  {
+    id: "33",
+    name: "Leather-Bound Journal Set",
+    description: "Set of 3 handmade leather journals with premium paper",
+    price: 44.99,
+    image: "https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?w=800&q=80",
+    category: "books",
+    inventory: 65,
+    rating: 4.8,
+    reviews: 79
+  },
+  {
+    id: "34",
+    name: "Portable Car Jump Starter",
+    description: "12V car battery jump starter with built-in air compressor",
+    price: 79.99,
+    image: "https://images.unsplash.com/photo-1617886903355-9764c8a2c60e?w=800&q=80",
+    category: "automotive",
+    inventory: 30,
+    rating: 4.6,
+    reviews: 118
+  },
+  {
+    id: "35",
+    name: "Natural Bamboo Cutting Board Set",
+    description: "Set of 3 eco-friendly bamboo cutting boards with juice grooves",
+    price: 34.99,
+    image: "https://images.unsplash.com/photo-1595360136755-4cdc0fbce5ad?w=800&q=80",
+    category: "home-living",
+    inventory: 75,
+    rating: 4.7,
+    reviews: 93
+  },
+  {
+    id: "36",
+    name: "Retro Polaroid Camera",
+    description: "Instant film camera with built-in flash and vintage design",
+    price: 99.99,
+    image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800&q=80",
+    category: "electronics",
+    inventory: 25,
+    rating: 4.5,
+    reviews: 87
+  },
+  {
+    id: "37",
+    name: "Organic Matcha Green Tea Powder",
+    description: "Premium grade organic matcha green tea, 100g tin",
+    price: 29.99,
+    image: "https://images.unsplash.com/photo-1582793988951-9aed5509eb97?w=800&q=80",
+    category: "food-beverage",
+    inventory: 90,
+    rating: 4.8,
+    reviews: 134
+  },
+  {
+    id: "38",
+    name: "Collapsible Folding Bike",
+    description: "20-inch folding bicycle with 7-speed Shimano gears",
+    price: 349.99,
+    image: "https://images.unsplash.com/photo-1592184277967-6b5a9543ee78?w=800&q=80",
+    category: "sports",
+    inventory: 15,
+    rating: 4.6,
+    reviews: 68
+  },
+  {
+    id: "39",
+    name: "Luxury Scented Candle Set",
+    description: "Set of 4 hand-poured soy wax candles with essential oils",
+    price: 59.99,
+    image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=800&q=80",
+    category: "home-living",
+    inventory: 50,
+    rating: 4.9,
+    reviews: 107
+  },
+  {
+    id: "40",
+    name: "Smart Pet Feeder",
+    description: "Wi-Fi enabled automatic pet feeder with camera and app control",
+    price: 129.99,
+    image: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=800&q=80",
+    category: "home-living",
+    inventory: 30,
+    rating: 4.4,
+    reviews: 76
   }
 ];
 
@@ -93,31 +445,61 @@ export const categories = [
   {
     id: "electronics",
     name: "Electronics",
-    description: "Latest gadgets and tech",
+    description: "Cutting-edge gadgets and tech accessories",
     image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800&q=80"
   },
   {
     id: "fashion",
     name: "Fashion",
-    description: "Trendy clothing and accessories",
+    description: "Stylish clothing and accessories for all",
     image: "https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&q=80"
   },
   {
     id: "home-living",
     name: "Home & Living",
-    description: "Furniture and decor",
+    description: "Furniture, decor, and home improvement",
     image: "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=800&q=80"
   },
   {
     id: "sports",
-    name: "Sports",
-    description: "Sports and fitness equipment",
+    name: "Sports & Outdoors",
+    description: "Equipment for sports and outdoor activities",
     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80"
   },
   {
     id: "books",
-    name: "Books",
-    description: "Books and magazines",
+    name: "Books & Media",
+    description: "Books, e-books, and digital content",
     image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=800&q=80"
+  },
+  {
+    id: "beauty",
+    name: "Beauty & Personal Care",
+    description: "Cosmetics, skincare, and grooming products",
+    image: "https://images.unsplash.com/photo-1598460880248-71ec6d2d582b?w=800&q=80"
+  },
+  {
+    id: "food-beverage",
+    name: "Food & Beverage",
+    description: "Gourmet foods, drinks, and culinary essentials",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80"
+  },
+  {
+    id: "health-wellness",
+    name: "Health & Wellness",
+    description: "Supplements, fitness gear, and wellness products",
+    image: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=800&q=80"
+  },
+  {
+    id: "toys-games",
+    name: "Toys & Games",
+    description: "Fun and educational toys for all ages",
+    image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80"
+  },
+  {
+    id: "automotive",
+    name: "Automotive",
+    description: "Car accessories and maintenance products",
+    image: "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&q=80"
   }
 ];

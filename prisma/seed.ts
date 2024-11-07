@@ -4,6 +4,9 @@ import { products as seedProducts, categories as seedCategories } from '../lib/d
 const prisma = new PrismaClient();
 
 async function main() {
+  // start by reset products and categories
+  await prisma.product.deleteMany({});
+  await prisma.category.deleteMany({});
   // Seed categories
   for (const category of seedCategories) {
     await prisma.category.upsert({
