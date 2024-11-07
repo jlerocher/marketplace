@@ -8,6 +8,9 @@
     "semi": true,
     "trailingComma": "all",
     "arrowParens": "always",
-    "plugins": ["prettier-plugin-tailwindcss"],
-    "tailwindConfig": "tailwind.config.js"
+    "plugins": [
+        "prettier-plugin-tailwindcss",
+        "prettier-plugin-organize-imports"
+    ],
+    "tailwindConfig": "tailwind.config.ts"
 }
