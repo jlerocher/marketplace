@@ -8,7 +8,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { prisma } from "@/lib/prisma";
-import { ShoppingCart, Star } from "lucide-react";
+import { Info, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -37,7 +37,10 @@ export default async function FeaturedProducts() {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {products.map((product) => (
-                        <Card key={product.id} className="group">
+                        <Card
+                            key={product.id}
+                            className="group hover:shadow-md transition-all duration-500"
+                        >
                             <Link href={`/products/${product.id}`}>
                                 <CardHeader className="p-0">
                                     <div className="aspect-square relative overflow-hidden rounded-t-lg">
@@ -45,7 +48,7 @@ export default async function FeaturedProducts() {
                                             src={product.image}
                                             alt={product.name}
                                             fill
-                                            className="object-cover transition-transform group-hover:scale-105"
+                                            className="object-cover transition-transform group-hover:scale-150 duration-500"
                                         />
                                         <div className="absolute top-2 right-2">
                                             <Badge
@@ -75,9 +78,9 @@ export default async function FeaturedProducts() {
                                     </div>
                                 </CardContent>
                                 <CardFooter className="p-4 pt-0">
-                                    <Button className="w-full group-hover:bg-primary/90">
-                                        <ShoppingCart className="mr-2 h-4 w-4" />
-                                        Add to Cart
+                                    <Button className="w-full group-hover:bg-primary/90 group/icon">
+                                        <Info className="mr-2 h-4 w-4 group-hover/icon:motion-preset-shake" />
+                                        Learn More
                                     </Button>
                                 </CardFooter>
                             </Link>
