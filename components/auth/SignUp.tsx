@@ -56,6 +56,7 @@ export default function SignUp() {
           <div>
             <label className="block text-sm mb-1">Password</label>
             <input
+            aria-label="Password"
               type="password"
               className="w-full p-2 border rounded"
               value={formData.password}
