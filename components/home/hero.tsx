@@ -16,12 +16,19 @@ export default async function Hero() {
                     Start your shopping journey today!
                 </p>
                 <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-                    <Button asChild variant="default" size="lg" className="">
+                    <Button
+                        asChild
+                        variant="default"
+                        size="lg"
+                        className="group"
+                    >
                         <Link
                             href="/products"
                             className="flex items-center gap-2 font-bold text-base text-white"
                         >
-                            <ShoppingBag className="h-5 w-5" />
+                            <div className="group-hover:motion-preset-shake">
+                                <ShoppingBag className="h-5 w-5" />
+                            </div>
                             Start Shopping
                         </Link>
                     </Button>
@@ -30,7 +37,7 @@ export default async function Hero() {
                         asChild
                         size="lg"
                         variant="outline"
-                        className="bg-transparent text-white border-white hover:bg-white/10 "
+                        className="bg-transparent text-white border-white "
                     >
                         <Link href="/become-seller">Become a Seller</Link>
                     </Button>

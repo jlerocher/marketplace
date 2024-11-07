@@ -28,9 +28,13 @@ export default function Navbar() {
                     {session ? (
                         <UserNav user={session.user} />
                     ) : (
-                        <Button asChild variant="default" className="ml-2">
+                        <Button
+                            asChild
+                            variant="default"
+                            className="ml-2 group"
+                        >
                             <Link href="/auth/signin">
-                                <User className="mr-2 h-4 w-4" />
+                                <User className="mr-2 h-4 w-4 group-hover:motion-preset-shake" />
                                 Sign In
                             </Link>
                         </Button>
