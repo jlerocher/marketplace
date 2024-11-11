@@ -18,9 +18,24 @@ interface CartStore {
     total: number;
 }
 
+/**
+ * useCart is a custom hook created using the Zustand library to manage shopping cart state.
+ * It persists cart data using the persist middleware providing functionalities for adding,
+ * removing, updating item quantities, and clearing the cart.
+ *
+ * Properties:
+ * - items: An array representing the items in the shopping cart. Each item includes its details like id, price, and quantity.
+ * - total: A number representing the total cost of all items in the cart.
+ *
+ * Methods:
+ * - addItem(item): Adds an item to the cart. If the item already exists, it increments its quantity.
+ * - removeItem(id): Removes an item from the cart by its id.
+ * - updateQuantity(id, quantity): Updates the quantity of a specific item by its id.
+ * - clearCart(): Clears all items from the cart and resets the total to zero.
+ */
 export const useCart = create<CartStore>()(
     persist(
-        (set, get) => ({
+        (set, _get) => ({
             items: [],
             total: 0,
             addItem: (item) =>
